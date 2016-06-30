@@ -10,8 +10,6 @@ class Title extends Component {
   }
 
   render(props) {
-    console.log(props)
-    console.log(123)
     return (
       <div onClick={this.toggleSubset.bind(this)} className={classes.title}>{this.props.text}<i className={classes.active}></i></div>
     )
