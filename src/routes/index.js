@@ -5,7 +5,6 @@ import PageNotFound from './PageNotFound'
 import HelpRoute from './Help'
 import HelpDetailRoute from './HelpDetail'
 import NoticeRoute from './Notice'
-import Zen from './Zen'
 
 /*  Note: Instead of using JSX, we recommend using react-router
     PlainRoute objects to build route definitions.   */
@@ -18,8 +17,7 @@ export const createRoutes = (store) => ([
     childRoutes: [
       HelpRoute(store),
       HelpDetailRoute(store),
-      NoticeRoute(store),
-      Zen(store)
+      NoticeRoute(store)
     ]
   },
   {
