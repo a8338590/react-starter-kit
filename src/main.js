@@ -49,7 +49,6 @@ let render = (routerKey = null) => {
       history={history}
       routes={routes}
       routerKey={routerKey}
-      onUpdate={() => window.scrollTo(0, 0)}
     />,
     MOUNT_NODE
   )

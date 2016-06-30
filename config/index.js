@@ -26,11 +26,7 @@ const config = {
   // ----------------------------------
   // Server Configuration
   // ----------------------------------
-<<<<<<< HEAD
   server_host : 'localhost', // use string 'localhost' to prevent exposure on local network
-=======
-  server_host : localip, // use string 'localhost' to prevent exposure on local network
->>>>>>> github
   server_port : process.env.PORT || 3000,
 
   // ----------------------------------
@@ -66,13 +62,13 @@ const config = {
 }
 
 /************************************************
--------------------------------------------------
+ -------------------------------------------------
 
-All Internal Configuration Below
-Edit at Your Own Risk
+ All Internal Configuration Below
+ Edit at Your Own Risk
 
--------------------------------------------------
-************************************************/
+ -------------------------------------------------
+ ************************************************/
 
 // ------------------------------------
 // Environment
