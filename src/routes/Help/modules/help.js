@@ -1,26 +1,17 @@
+import _ from 'lodash'
 // ------------------------------------
 // Constants
 // ------------------------------------
-const COUNTER_INCREMENT = 'COUNTER_INCREMENT'
+const TITLE_ACTIVE = 'TITLE_ACTIVE'
 
 // ------------------------------------
 // Actions
 // ------------------------------------
-export function increment (value = 1) {
-  return {
-    type: COUNTER_INCREMENT,
-    payload: value
-  }
-}
 
-export const doubleAsync = () => {
-  return (dispatch, getState) => {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        dispatch(increment(getState().counter))
-        resolve()
-      }, 200)
-    })
+export function titleToggleActive (text) {
+  return {
+    type: TITLE_ACTIVE,
+    payload: text
   }
 }
 
@@ -28,15 +19,21 @@ export const doubleAsync = () => {
 // Action Handlers
 // ------------------------------------
 const ACTION_HANDLERS = {
-  [COUNTER_INCREMENT]: (state, action) => {
-    return state + action.payload
+  [TITLE_ACTIVE]: (state, action) => {
+    if (state.indexOf(action.payload) === -1){
+      return (state.concat(action.payload))
+    } else {
+      return (_.remove(...state, function(n) {
+        return n == action
+      }))
+    }
   }
 }
 
 // ------------------------------------
 // Reducer
 // ------------------------------------
-const initialState = 0
+const initialState = []
 export default function (state = initialState, action) {
   const handler = ACTION_HANDLERS[action.type]
 

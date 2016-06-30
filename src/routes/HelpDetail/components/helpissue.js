@@ -3,6 +3,11 @@ import classes from './helpDetail.scss'
 import { Link } from 'react-router'
 
 export default class extends Component{
+
+  componentDidMount(){
+    document.title = '常见问题'
+  }
+
   render(){
     return (
       <div className={classes.con}>

@@ -7,6 +7,11 @@ import step4 from '../assert/step-04.jpg'
 import step5 from '../assert/step-05.jpg'
 
 export default class extends Component{
+
+  componentDidMount(){
+    document.title = '购物流程'
+  }
+
   render(){
     return (
       <div className={classes.con}>

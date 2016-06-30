@@ -2,6 +2,11 @@ import React, { Component } from 'react'
 import classes from './helpDetail.scss'
 
 export default class extends Component{
+
+  componentDidMount(){
+    document.title = '服务声明'
+  }
+
   render(){
     return (
       <div className={classes.con}>

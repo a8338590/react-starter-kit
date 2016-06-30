@@ -2,10 +2,15 @@ import React, { Component } from 'react'
 import classes from './helpDetail.scss'
 
 export default class extends Component{
+
+  componentDidMount(){
+    document.title = '正品保障'
+  }
+
   render(){
     return (
       <div className={classes.con}>
-        <h1 className={classes.maintitle}>常见问题</h1>
+        <h1 className={classes.maintitle}>100%正品保障</h1>
         <div className={classes.info}>
           <h3>精选优质海外商家</h3>
           <p>综合评估接入的海外商家，精选具有完善正品保障体系的商家作为平台对接电商平台，其中包括Amazon.com、6pm、Vitacost、GNC、Beauty等具有全球知名度的大型电商平台；<img src="http://act.hai360.com/uploads/allimg/140324/2-140324143133455.jpg" alt=""/></p>

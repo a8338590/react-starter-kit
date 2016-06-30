@@ -3,10 +3,15 @@ import classes from './helpDetail.scss'
 import { Link } from 'react-router'
 
 export default class extends Component{
+
+  componentDidMount(){
+    document.title = '退货服务'
+  }
+
   render(){
     return (
       <div className={classes.con}>
-        <h1 className={classes.maintitle}>服务声明</h1>
+        <h1 className={classes.maintitle}>退货服务政策</h1>
         <div className={classes.info}>
           <h2>
             由于跨境购物环节较多、物流周期较长，难免出现物品损坏、丢件、货物错误等异常情况，为保障用户利益，Hai360承诺，7天内（自商品签收之日起），无论海外商家对问题订单如何处理，用户可以申请“异常订单赔偿”或“无忧退货”，免除您的海外购物后顾之忧。</h2>

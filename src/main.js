@@ -27,7 +27,7 @@ let render = (key = null) => {
   const App = (
     <Provider store={store}>
       <div style={{ height: '100%' }}>
-        <Router history={history} children={routes} key={key} />
+        <Router history={history} children={routes} key={key} onUpdate={() => window.scrollTo(0, 0)} />
       </div>
     </Provider>
   )

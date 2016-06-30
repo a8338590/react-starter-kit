@@ -2,10 +2,15 @@ import React, { Component } from 'react'
 import classes from './helpDetail.scss'
 
 export default class extends Component{
+
+  componentDidMount(){
+    document.title = '尺码对照表'
+  }
+
   render(){
     return (
       <div className={classes.con}>
-        <h1 className={classes.maintitle}>服务声明</h1>
+        <h1 className={classes.maintitle}>尺码对照表</h1>
         <div className={classes.info}>
           <h1 className={classes.maintitle2}>女装</h1>
           <h3>女装上衣尺寸：</h3>
@@ -117,7 +122,7 @@ export default class extends Component{
                 <tr>
                   <th>标准</th>
                   <th>国际</th>
-                  <th colspan="2">美国</th>
+                  <th colSpan="2">美国</th>
                   <th>中国</th>
                   <th>腰围(市尺)</th>
                   <th>腰围(cm)</th>

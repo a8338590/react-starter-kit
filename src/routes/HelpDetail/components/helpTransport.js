@@ -2,10 +2,15 @@ import React, { Component } from 'react'
 import classes from './helpDetail.scss'
 
 export default class extends Component{
+
+  componentDidMount(){
+    document.title = '物流说明'
+  }
+
   render(){
     return (
       <div className={classes.con}>
-        <h1 className={classes.maintitle}>服务声明</h1>
+        <h1 className={classes.maintitle}>物流说明</h1>
         <div className={classes.info}>
           <h2>Hai360海外购致力打造最便捷的海外购物平台，我们在物流环节也做更多努力，提供更低价、更快速的物流配送服务。<br/><span className={classes.noti}></span></h2>
           <h3>目前Hai360对国际物流运费、逾期送达进行相关补贴。物流运费补贴及配送规则如下：</h3>

@@ -2,10 +2,15 @@ import React, { Component } from 'react'
 import classes from './helpDetail.scss'
 
 export default class extends Component{
+
+  componentDidMount(){
+    document.title = '身份证说明'
+  }
+
   render(){
     return (
       <div className={classes.con}>
-        <h1 className={classes.maintitle}>常见问题</h1>
+        <h1 className={classes.maintitle}>身份证说明</h1>
         <div className={classes.info}>
           <h3>1、为什么需要上传身份证</h3>
           <p>根据《中华人民共和国海关对进出境快件监管办法》，第二十二条规定：个人物品类进出境快件报关时， 运营人应当向海关提交《中华人民共和国海关进出境快件个人物品申报单》、每一进出境快件的分运单、进境快件收件人或出境快件发件人身份证件影印件和海关需要的其它证件。为配合海关完成清关，让您的货物能尽快送达，在Hai360通知您上传身份证后，请在1-2个工作日内提供您收件人身份证信息。</p>
