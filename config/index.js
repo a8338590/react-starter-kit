@@ -12,7 +12,7 @@ debug('Creating default configuration.')
 // Default Configuration
 // ========================================================
 const config = {
-  env : process.env.NODE_ENV || 'production',
+  env : process.env.NODE_ENV || 'development',
 
   // ----------------------------------
   // Project Structure
@@ -26,7 +26,11 @@ const config = {
   // ----------------------------------
   // Server Configuration
   // ----------------------------------
+<<<<<<< HEAD
   server_host : 'localhost', // use string 'localhost' to prevent exposure on local network
+=======
+  server_host : localip, // use string 'localhost' to prevent exposure on local network
+>>>>>>> github
   server_port : process.env.PORT || 3000,
 
   // ----------------------------------
