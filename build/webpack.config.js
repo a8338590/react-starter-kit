@@ -44,6 +44,10 @@ webpackConfig.output = {
   publicPath: config.compiler_public_path
 }
 
+if (__PROD__) {
+  webpackConfig.output.publicPath = 'http://static.hai360.com/h5/'
+}
+
 // ------------------------------------
 // Plugins
 // ------------------------------------
