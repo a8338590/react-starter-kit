@@ -9,7 +9,7 @@ class Title extends Component {
     this.props.titleToggleActive(ele.textContent)
   }
 
-  render(props) {
+  render() {
     return (
       <div onClick={this.toggleSubset.bind(this)} className={classes.title}>{this.props.text}<i className={classes.active}></i></div>
     )
